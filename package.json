@@ -1,0 +1,31 @@
+{
+  "name": "congruent",
+  "version": "0.0.0",
+  "description": "Deep comparison of two variables",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "fast-apply": "*",
+    "is-args": "*"
+  },
+  "devDependencies": {
+      "mocha": "*",
+      "should": "*"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JayceTDE/congruent.git"
+  },
+  "keywords": [
+    "deep",
+    "equal",
+    "compare"
+  ],
+  "author": "Jayce Pulsipher <jaycemp@gmail.com>",
+  "license": "MIT"
+}
