@@ -1,5 +1,6 @@
 var fastApply = require('fast-apply')
   , isArgs = require('is-args')
+  , isBuffer = typeof Buffer === 'function' ? Buffer.isBuffer : null
 ;
 
 module.exports = congruent;
@@ -35,7 +36,7 @@ function congruent(actual, expected, strict) {
         ;
     }
     
-    if (Buffer && Buffer.isBuffer(actual)) {
+    if (isBuffer && isBuffer(actual)) {
         if (actual.length !== expected.length) return false;
         
         i = actual.length;

@@ -1,6 +1,6 @@
 {
   "name": "congruent",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Deep comparison of two variables",
   "main": "index.js",
   "directories": {
