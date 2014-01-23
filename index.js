@@ -3,9 +3,9 @@ var fastApply = require('fast-apply')
   , isBuffer = typeof Buffer === 'function' ? Buffer.isBuffer : null
 ;
 
-module.exports = congruent;
+module.exports = deepEqual;
 
-function congruent(actual, expected, strict) {
+function deepEqual(actual, expected, strict) {
     if (actual === expected) return true;
     
     // isNaN test
@@ -78,7 +78,7 @@ function congruent(actual, expected, strict) {
     
     while (--i >= 0) {
         key = actualKeys[i];
-        if (!congruent(actual[key], expected[key], strict)) return false;
+        if (!deepEqual(actual[key], expected[key], strict)) return false;
     }
     
     return true;

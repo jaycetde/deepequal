@@ -1,4 +1,4 @@
-# congruent
+# deepequal
 
 Deep comparison of two variables
 
@@ -7,25 +7,25 @@ Buffers, Regular Expressions, and NaN (In my opinion, NaN should equal NaN)
 
 ```javascript
 
-var congruent = require('congruent');
+var deepEqual = require('deepequal');
 
-congruent([1, 2, 3], new Array(1, 2, 3));
+deepEqual([1, 2, 3], new Array(1, 2, 3));
 // true;
 
-congruent(NaN, NaN);
+deepEqual(NaN, NaN);
 // true;
 
-congruent({ a: [1, 2, 3] }, { a: [1, 3, 2] });
+deepEqual({ a: [1, 2, 3] }, { a: [1, 3, 2] });
 // false;
 
 ```
 
-## congruent(a, b, strict)
+## deepEqual(a, b, strict)
 
 * strict - Use strict comparison (===) between primitives (Boolean, String, Number) (default: false)
 
 ## Installation
 
 ```bash
-npm install congruent
+npm install deepequal
 ```

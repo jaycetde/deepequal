@@ -1,6 +1,6 @@
 {
-  "name": "congruent",
-  "version": "0.0.1",
+  "name": "deepequal",
+  "version": "0.0.0",
   "description": "Deep comparison of two variables",
   "main": "index.js",
   "directories": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JayceTDE/congruent.git"
+    "url": "https://github.com/JayceTDE/deepequal.git"
   },
   "keywords": [
     "deep",
