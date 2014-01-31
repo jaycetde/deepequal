@@ -1,4 +1,4 @@
-# deepequal
+# deepequal [![Build Status](https://travis-ci.org/JayceTDE/deepequal.png)](https://travis-ci.org/JayceTDE/deepequal)
 
 Deep comparison of two variables
 
